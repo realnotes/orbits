@@ -1,0 +1,65 @@
+*{
+  font-family:roboto;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  min-width:700px;
+  padding:20px;
+}
+h1{
+  padding:10px;
+}
+form{
+  padding:10px;
+}
+input,select{
+  height:30px;
+  width:120px;
+  border:1px solid black;
+  border-radius:0;
+  margin:10px 0;
+  padding:5px;
+  background-color:#fff;
+}
+input:focus,select:focus{
+  outline:1px solid black;
+}
+#diagram{
+  display:inline-block;
+  box-sizing:content-box;
+  width:600px;
+  height:600px;
+  margin:10px;
+  border:2px solid black;
+  position:relative;
+}
+img{
+  position:absolute;
+}
+.orbit{
+  position:absolute;
+  border:1px solid black;
+  border-radius:50%;
+}
+.planet{
+  width:32px;
+  height:24px;
+}
+#sun{
+  width:48px;
+  height:36px;
+  left:276px;
+  top:282px;
+}
+#mercuryorbit{width:72px;height:72px;left:264px;top:264px;}#venusorbit{width:138px;height:138px;left:231px;top:231px;}#earthorbit{width:204px;height:204px;left:198px;top:198px;}#marsorbit{width:270px;height:270px;left:165px;top:165px;}#jupiterorbit{width:336px;height:336px;left:132px;top:132px;}#saturnorbit{width:402px;height:402px;left:99px;top:99px;}#uranusorbit{width:468px;height:468px;left:66px;top:66px;}#neptuneorbit{width:534px;height:534px;left:33px;top:33px;}
+#info{
+  display:inline-block;
+  width:240px;
+  vertical-align:top;
+  margin:10px;
+}
+#info p span{
+  font-weight:bold;
+}
