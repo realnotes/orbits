@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planet Orbits</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>How far have the planets traveled in . . .</h1>
+  <form>
+    <p>Enter a number and a unit</p>
+    <input name='number' type='number' value='0' id='number'>
+    <select name='unit' id='unit'> 
+        <option value='seconds'>Seconds</option><option value='minutes'>Minutes</option><option value='hours'>Hours</option><option value='days'>Days</option><option value='weeks'>Weeks</option><option value='months'>Months</option><option value='years'>Years</option>
+    </select>
+    <p>Planets orbit counterclockwise</p><p>Starting point is directly above the sun</p>
+  </form>
+  <div id='diagram'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/sun.png' id='sun'>
+    <div class='orbit' id='mercuryorbit'></div>    <div class='orbit' id='venusorbit'></div>
+    <div class='orbit' id='earthorbit'></div>
+    <div class='orbit' id='marsorbit'></div>
+    <div class='orbit' id='jupiterorbit'></div>
+    <div class='orbit' id='saturnorbit'></div>
+    <div class='orbit' id='uranusorbit'></div>
+    <div class='orbit' id='neptuneorbit'></div>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/mercury.png' class='planet' id='mercury'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/venus.png' class='planet' id='venus'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/earth.png' class='planet' id='earth'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/mars.png' class='planet' id='mars'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/jupiter.png' class='planet' id='jupiter'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/saturn.png' class='planet' id='saturn'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/uranus.png' class='planet' id='uranus'>
+    <img src='https://nineplanets.org/wp-content/uploads/2020/03/neptune.png' class='planet' id='neptune'>
+  </div>
+  <div id='info'>
+    <p>Mercury: <span id='mercuryinfo'>0</span> full orbits</p>
+    <p>Venus: <span id='venusinfo'>0</span> full orbits</p>
+    <p>Earth: <span id='earthinfo'>0</span> full orbits</p>
+    <p>Mars: <span id='marsinfo'>0</span> full orbits</p>
+    <p>Jupiter: <span id='jupiterinfo'>0</span> full orbits</p>
+    <p>Saturn: <span id='saturninfo'>0</span> full orbits</p>
+    <p>Uranus: <span id='uranusinfo'>0</span> full orbits</p>
+    <p>Neptune: <span id='neptuneinfo'>0</span> full orbits</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
